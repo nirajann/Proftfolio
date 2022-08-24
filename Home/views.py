@@ -11,3 +11,16 @@ from django.http import JsonResponse
 def home(request):
 
     return render(request,'home/portfolio.html',)
+
+
+
+def contact(request):
+
+    return render(request,'home/contact.html',)
+
+    
+def testimonial(request):
+
+    return render(request,'home/testimonial.html',)
+
+

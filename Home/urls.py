@@ -7,7 +7,9 @@ from .views import  *
 
 urlpatterns = [
     path('', views.home ,name="home"),
-  
+    path('contact', views.contact ,name="contact"),
+    path('testimonial', views.testimonial ,name="testimonial"),
+     
 ]
 
 if settings.DEBUG:

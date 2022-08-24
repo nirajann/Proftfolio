@@ -1,6 +1,7 @@
 {% extends 'nav.html' %}
 {% load static %}
 {% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}">{% endblock %}
+<script type="text/javascript" src="{% static '/js/home.js' %}"></script>
 {% block content %} 
 <main class="app">
   <div class="boxes">
@@ -14,7 +15,7 @@
 
  
 <section class="mainbody pb-5">
-<div class="container pb-5">
+<div class="profile">
     <header class="header">
       <div class="perfil">
         <img src="{% static 'images/profile.jpg' %}" alt="foto de perfil" class="foto-perfil">
@@ -25,8 +26,7 @@
           <div class="icons">
            
 
-            <a href="" title="Codepen" class="link-icon" target="_blank">
-              <i class="fa-brands fa-codepen"></i>
+         
             </a>
           </div>
         </div>
@@ -42,26 +42,97 @@
         <h2 class="white">Projetos</h2>
         <p class="line text-animation white">Visit my social profile for information</p>
       
-           
-            <div class="wrapper">
-            <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-3x"> <img src="{% static 'images/fb.png' %}" alt="foto de perfil" class="imagex"></i></div></a>
-            <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-instagram social  instagram fa-3x"><img src="{% static 'images/insta.png' %}" alt="foto de perfil" class="imagex"></i></div></a>
-            <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social  twitter fa-3x"></i><img src="{% static 'images/linke.png' %}" alt="foto de perfil" class="imagex"></div></a>
-            <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-3x"></i></div></a>
-            <a href="#"><div class="bg-ico" id="whatsapp"><i class="fab fa-whatsapp social  whatsapp fa-3x"></i></div></a>
-            <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-3x"></i></div></a>
-            </div>
+        <div class="share-buttons-container">
+  <div class="share-list">
+    <!-- FACEBOOK -->
+    <a class="fb-h" onclick="return fbs_click()" target="_blank">
+      <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
+    </a>
 
+    <!-- TWITTER -->
+    <a class="tw-h" onclick="return tbs_click()"  target="_blank">
+      <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
+    </a>
 
-         
+    <!-- LINKEDIN -->
+    <a class="li-h" onclick="return lbs_click()"  target="_blank">
+      <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+    </a>
 
-          
+    <!-- REDDIT -->
+    <a class="re-h" onclick="return rbs_click()" target="_blank">
+      <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+    </a>
+
+    <!-- PINTEREST -->
+    <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+      <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+    </a>
+  </div>
+</div>
+        
           
    
       </div>
     </section>
 </main> 
-   
+<section class="we-offer-area text-center bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>What we <span>Offer</span></h2>
+                    </div>
+                </div>
+            </div>
+                <div class="row our-offer-items less-carousel">
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <h4>Web Development</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-dharmachakra"></i>
+                            <h4>App Development</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    <!-- Single Item -->
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <i class="fas fa-tasks"></i>
+                            <h4>Graphic Design</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+
+                    
+                    <!-- End Single Item -->
+                </div>
+        </div>
+    </section>
+
+
+
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+{% block js %}<script type="text/javascript" src="{% static '/js/home.js' %}"></script>{% endblock %}
 {% endblock content %}
 
 
