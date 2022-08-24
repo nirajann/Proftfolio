@@ -1,0 +1,71 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block css %}<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}">{% endblock %}
+{% block content %} 
+<main class="app">
+  <div class="boxes">
+    <ul class="box">
+      <li class="boxs"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+ 
+<section class="mainbody pb-5">
+<div class="container pb-5">
+    <header class="header">
+      <div class="perfil">
+        <img src="{% static 'images/profile.jpg' %}" alt="foto de perfil" class="foto-perfil">
+        <div class="description">
+        
+          <h1 class="white padding10">Nirajan Gautam</h1>
+          <h3 class="white">web Developer & programmer</h3>
+          <div class="icons">
+           
+
+            <a href="" title="Codepen" class="link-icon" target="_blank">
+              <i class="fa-brands fa-codepen"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% comment %} <button title="Tema" onclick="mudarTema()"></button> {% endcomment %}
+
+    </header>
+    </div>
+
+    <!-- CONTENT -->
+    <main class="content col-lg-3">
+      <div class="container-projetos col-lg-3">
+        <h2 class="white">Projetos</h2>
+        <p class="line text-animation white">Visit my social profile for information</p>
+      
+           
+            <div class="wrapper">
+            <a href="#"><div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-3x"> <img src="{% static 'images/fb.png' %}" alt="foto de perfil" class="imagex"></i></div></a>
+            <a href="#"><div class="bg-ico" id="pinterest"><i class="fab fa-instagram social  instagram fa-3x"><img src="{% static 'images/insta.png' %}" alt="foto de perfil" class="imagex"></i></div></a>
+            <a href="#"><div class="bg-ico" id="twitter"><i class="fab fa-twitter social  twitter fa-3x"></i><img src="{% static 'images/linke.png' %}" alt="foto de perfil" class="imagex"></div></a>
+            <a href="#"><div class="bg-ico" id="tumblr"><i class="fab fa-tumblr social  tumblr fa-3x"></i></div></a>
+            <a href="#"><div class="bg-ico" id="whatsapp"><i class="fab fa-whatsapp social  whatsapp fa-3x"></i></div></a>
+            <a href="#"><div class="bg-ico" id="youtube"><i class="fab fa-youtube social  youtube fa-3x"></i></div></a>
+            </div>
+
+
+         
+
+          
+          
+   
+      </div>
+    </section>
+</main> 
+   
+{% endblock content %}
+
+
+
+{% block section %}
+ 
+{% endblock section %}
